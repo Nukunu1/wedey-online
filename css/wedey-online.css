@@ -1,0 +1,177 @@
+* {
+    font-family: Poppins;
+    color: white;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    margin-left: 0;
+    margin-top: -25px;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.first-section {
+    margin-left: 485px;
+    display: block;
+}
+
+.main {
+    background: linear-gradient(135deg, #23aad2, #fb86a3);
+}
+
+.hashtag {
+    font-size: 16px;
+    line-height: 5;
+    margin-left: 40px;
+}
+
+.modify {
+    background-color: #00000038;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 50px;
+}
+
+.header {
+    font-size: 50px;
+    font-weight: 500;
+    width: 450px;
+    line-height: 1.20;
+    margin-left: 40px;
+    letter-spacing: 0;
+    margin-bottom: 24px;
+}
+
+.paragraph {
+    margin-left: 40px;
+    font-size: 20px;
+    width: 550px;
+}
+
+.woman {
+    position: absolute;
+    right: 25rem;
+    top: 8.78rem;
+}
+
+.google-play {
+    width: 190px;
+    height: 54.28px;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-top: 24px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    transition: 0.3s;
+}
+
+.google-play:hover {
+    transform: translateY(-8px);
+}
+
+.apple-store {
+    width: 165px;
+    height: 55.82px;
+    cursor: pointer;
+    margin-bottom: 100px;
+    transition: 0.3s;
+}
+
+.apple-store:hover {
+    transform: translateY(-8px);
+}
+
+.social-media {
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 33rem;
+}
+
+.facebook,
+.twitter,
+.instagram,
+.whatsapp {
+    background-color: #00000038;
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    margin-left: 20px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.facebook:hover {
+    background-color: #1d4ed8;
+}
+
+.twitter:hover {
+    background-color: #3b82f6;
+}
+
+.instagram:hover {
+    background-color: #ef4444;
+}
+
+.whatsapp:hover {
+    background-color: #22c55e;
+}
+
+.footer {
+    background-color: #292524;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo2 {
+    width: 181.5px;
+    height: 181.5px;
+    margin-top: 40px;
+}
+
+.footer-links {
+    font-size: 18px;
+    margin-top: 80px;
+}
+
+
+.about {
+    margin-left: 24px;
+}
+
+
+.features {
+    margin-left: 24px;
+}
+
+.home:hover {
+    color: #22c55e;
+}
+
+.about:hover {
+    color: #22c55e;
+}
+
+.features:hover {
+    color: #22c55e;
+}
+
+.socials {
+    margin-top: 80px;
+}
+
+.copyright {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    color: white;
+}

@@ -8,92 +8,148 @@ a {
     text-decoration: none;
 }
 
-.logo {
-    margin-left: 0;
-    margin-top: -25px;
-    height: 150px;
-    width: 150px;
-    cursor: pointer;
-}
-
-.first-section {
-    margin-left: 485px;
-    display: block;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .main {
     background: linear-gradient(135deg, #23aad2, #fb86a3);
+    display: flex;
+    flex-direction: column;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 170px;
+    width: 170px;
+    cursor: pointer;
+    margin-left: -48px;
+    margin-top: -60px;
+    margin-bottom: -60px;
+    /* Negative margins compensate for the huge transparent padding inside the image */
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 130px;
+}
+
+.social-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex: 1;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.text-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-top: -50px;
+    /* Adjust this value to move the text block further up or down */
+}
+
+.image-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.woman {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transform: scale(1.10);
+    /* Adjust this number to make her bigger or smaller */
+    transform-origin: bottom right;
+    /* Ensures she stays docked to the bottom right corner as she grows */
 }
 
 .hashtag {
     font-size: 16px;
-    line-height: 5;
-    margin-left: 40px;
+    margin-bottom: 24px;
 }
 
 .modify {
     background-color: #00000038;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 8px 16px;
     border-radius: 50px;
 }
 
 .header {
     font-size: 50px;
-    font-weight: 500;
-    width: 450px;
+    font-weight: 600;
     line-height: 1.20;
-    margin-left: 40px;
-    letter-spacing: 0;
     margin-bottom: 24px;
+    width: 450px;
 }
 
 .paragraph {
-    margin-left: 40px;
     font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
     width: 550px;
 }
 
-.woman {
-    position: absolute;
-    right: 25rem;
-    top: 8.78rem;
+.app-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .google-play {
-    width: 190px;
-    height: 54.28px;
+    width: 165px;
     cursor: pointer;
-    margin-left: 40px;
-    margin-top: 24px;
-    margin-right: 20px;
-    margin-bottom: 100px;
     transition: 0.3s;
 }
 
 .google-play:hover {
     transform: translateY(-8px);
+    filter: invert(1);
 }
 
 .apple-store {
     width: 165px;
-    height: 55.82px;
     cursor: pointer;
-    margin-bottom: 100px;
     transition: 0.3s;
 }
 
 .apple-store:hover {
     transform: translateY(-8px);
-}
-
-.social-media {
-    cursor: pointer;
-    position: absolute;
-    top: 2rem;
-    right: 33rem;
+    filter: invert(1);
 }
 
 .facebook,
@@ -104,54 +160,65 @@ a {
     width: 20px;
     height: 20px;
     padding: 8px;
-    margin-left: 20px;
     border-radius: 8px;
     transition: 0.5s;
 }
 
-.facebook:hover {
+.facebook1,
+.twitter2,
+.instagram3,
+.whatsapp4 {
+    background-color: #00000038;
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.facebook:hover, .facebook1:hover {
     background-color: #1d4ed8;
 }
 
-.twitter:hover {
+.twitter:hover, .twitter2:hover {
     background-color: #3b82f6;
 }
 
-.instagram:hover {
+.instagram:hover, .instagram3:hover {
     background-color: #ef4444;
 }
 
-.whatsapp:hover {
+.whatsapp:hover, .whatsapp4:hover {
     background-color: #22c55e;
 }
 
 .footer {
     background-color: #292524;
-    align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .logo2 {
-    width: 181.5px;
-    height: 181.5px;
-    margin-top: 40px;
+    width: 170px;
+    height: 170px;
+    margin-top: 60px;
 }
 
 .footer-links {
     font-size: 18px;
-    margin-top: 80px;
-}
-
-
-.about {
-    margin-left: 24px;
-}
-
-
-.features {
-    margin-left: 24px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 .home:hover {
@@ -168,10 +235,19 @@ a {
 
 .socials {
     margin-top: 80px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials .social-group {
+    gap: 30px;
 }
 
 .copyright {
     margin-top: 80px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     color: white;
+    font-size: 18px;
 }

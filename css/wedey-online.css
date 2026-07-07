@@ -107,6 +107,8 @@ a {
     background-color: #00000038;
     padding: 8px 16px;
     border-radius: 50px;
+    display: inline-block;
+    font-weight: 500;
 }
 
 .header {
@@ -176,19 +178,23 @@ a {
     transition: 0.5s;
 }
 
-.facebook:hover, .facebook1:hover {
+.facebook:hover,
+.facebook1:hover {
     background-color: #1d4ed8;
 }
 
-.twitter:hover, .twitter2:hover {
+.twitter:hover,
+.twitter2:hover {
     background-color: #3b82f6;
 }
 
-.instagram:hover, .instagram3:hover {
+.instagram:hover,
+.instagram3:hover {
     background-color: #ef4444;
 }
 
-.whatsapp:hover, .whatsapp4:hover {
+.whatsapp:hover,
+.whatsapp4:hover {
     background-color: #22c55e;
 }
 
@@ -197,6 +203,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 650px;
 }
 
 .footer-content {
@@ -204,37 +212,32 @@ a {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    gap: 80px;
 }
 
 .logo2 {
-    width: 170px;
-    height: 170px;
-    margin-top: 60px;
+    width: 150px;
+    height: auto;
+    filter: grayscale(1) scale(1.1);
 }
 
 .footer-links {
     font-size: 18px;
-    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
 }
 
-.home:hover {
-    color: #22c55e;
-}
-
-.about:hover {
-    color: #22c55e;
-}
-
+.home:hover,
+.about:hover,
 .features:hover {
     color: #22c55e;
+    transform: translateY(-4px);
+    display: inline-block;
 }
 
 .socials {
-    margin-top: 80px;
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -246,8 +249,66 @@ a {
 }
 
 .copyright {
-    margin-top: 80px;
-    margin-bottom: 80px;
     color: white;
     font-size: 18px;
+}
+
+@media (max-width: 768px) {
+
+    .social-media,
+    .image-content {
+        display: none;
+    }
+
+    .top-nav {
+        justify-content: flex-start;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    .logo {
+        margin-left: -20px;
+        margin-top: -40px;
+        margin-bottom: -20px;
+        width: 140px;
+        height: auto;
+    }
+
+    .main {
+        min-height: auto;
+        padding-bottom: 30px;
+    }
+
+    .hero-content {
+        padding-top: 0px;
+    }
+
+    .text-content {
+        max-width: 100%;
+        margin-top: 0;
+        padding-bottom: 0;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .header {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .paragraph {
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .app-buttons {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .google-play,
+    .apple-store {
+        width: 150px;
+    }
 }

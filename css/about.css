@@ -419,3 +419,98 @@ a {
     line-height: 1.5;
     font-weight: 500;
 }
+
+@media (max-width: 768px) {
+    .social-media,
+    .main-links,
+    .woman,
+    .third-left,
+    .fourth-middle {
+        display: none;
+    }
+
+    .top-nav {
+        justify-content: flex-start;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    .logo {
+        margin-left: -20px;
+        margin-top: -40px;
+        margin-bottom: -20px;
+        width: 140px;
+        height: auto;
+    }
+
+    .main {
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+    
+    .first-section {
+        max-width: 100%;
+    }
+
+    .header {
+        font-size: 40px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .google-play, .apple-store {
+        width: 150px;
+        height: auto;
+    }
+
+    .second {
+        flex-direction: column;
+        gap: 60px;
+        padding: 60px 20px;
+    }
+
+    .third {
+        flex-direction: column;
+        padding: 60px 20px;
+        gap: 30px;
+    }
+
+    .third-right {
+        max-width: 100%;
+    }
+
+    .offer-title {
+        font-size: 32px;
+        white-space: normal;
+    }
+
+    .fourth {
+        padding: 60px 20px;
+    }
+
+    .fourth-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .fourth-left, .fourth-right {
+        max-width: 100%;
+        gap: 30px;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer-content {
+        gap: 40px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+}

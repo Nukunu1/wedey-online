@@ -47,14 +47,14 @@ a {
 .social-media {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
     margin-right: 130px;
 }
 
 .social-group {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 .whatsapp-link {
@@ -76,8 +76,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 50px;
-    margin-top: -50px;
+    padding-bottom: 20px;
+    margin-top: -100px;
     /* Adjust this value to move the text block further up or down */
 }
 
@@ -89,13 +89,11 @@ a {
 }
 
 .woman {
+    width: 510px;
     max-width: 100%;
-    height: auto;
     display: block;
     transform: scale(1.10);
-    /* Adjust this number to make her bigger or smaller */
     transform-origin: bottom right;
-    /* Ensures she stays docked to the bottom right corner as she grows */
 }
 
 .hashtag {
@@ -133,7 +131,7 @@ a {
 }
 
 .google-play {
-    width: 165px;
+    width: 186px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -144,7 +142,7 @@ a {
 }
 
 .apple-store {
-    width: 165px;
+    width: 186px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -216,7 +214,7 @@ a {
 }
 
 .logo2 {
-    width: 150px;
+    width: 180px;
     height: auto;
     filter: grayscale(1) scale(1.1);
 }
@@ -269,7 +267,7 @@ a {
     .logo {
         margin-left: -20px;
         margin-top: -40px;
-        margin-bottom: -20px;
+        margin-bottom: 0px;
         width: 140px;
         height: auto;
     }
@@ -287,28 +285,30 @@ a {
         max-width: 100%;
         margin-top: 0;
         padding-bottom: 0;
+        padding-left: 16px;
         align-items: flex-start;
         text-align: left;
     }
 
     .header {
-        width: 100%;
-        font-size: 40px;
+        width: 85%;
+        font-size: 38px;
     }
 
     .paragraph {
-        width: 100%;
-        font-size: 18px;
-        margin-bottom: 30px;
+        width: 90%;
+        font-size: 20px;
+        margin-bottom: 16px;
     }
 
     .app-buttons {
-        gap: 15px;
+        gap: 7px;
         flex-wrap: wrap;
     }
 
     .google-play,
     .apple-store {
         width: 150px;
+        margin-bottom: 30px;
     }
 }
